@@ -1,0 +1,36 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="ID" value="${item.id}" underline="true" readonly="readonly"/>
+                            <#input id="openId" name="openId" value="${item.openId}" underline="true"/>
+                            <#input id="nickName" name="昵称" value="${item.nickName}" underline="true"/>
+                            <#input id="sex" name="性别" value="${item.sex}" underline="true"/>
+                            <#input id="province" name="省份" value="${item.province}" underline="true"/>
+                            <#input id="country" name="国家" value="${item.country}" />
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="city" name="城市" value="${item.city}" underline="true"/>
+                            <#input id="headimgurl" name="用户头像url" value="${item.headimgurl}" underline="true"/>
+                            <#input id="privilege" name="用户特权信息" value="${item.privilege}" underline="true"/>
+                            <#input id="unionid" name="unionid" value="${item.unionid}" underline="true"/>
+                            <#input id="createTime" name="创建时间" value="${item.createTime}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="TUserInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="TUserInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/Consumer/tUser/tUser_info.js"></script>
+@}
