@@ -39,6 +39,10 @@ public class Message extends Model<Message> {
      */
     private Integer type;
     /**
+     * 完成任务须浏览次数
+     */
+    private Integer number;
+    /**
      * 推广数量
      */
     private BigDecimal amount;
@@ -59,6 +63,14 @@ public class Message extends Model<Message> {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
     }
 
     public Integer getMid() {
@@ -127,6 +139,7 @@ public class Message extends Model<Message> {
         return "Message{" +
         ", id=" + id +
         ", mid=" + mid +
+        ", number=" + number +
         ", title=" + title +
         ", info=" + info +
         ", type=" + type +

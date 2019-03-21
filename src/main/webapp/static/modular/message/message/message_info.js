@@ -51,6 +51,7 @@ MessageInfoDlg.collectData = function() {
     .set('title')
     .set('type')
     .set('amount')
+    .set('number')
     .set('remain')
     .set('createTime');
 }

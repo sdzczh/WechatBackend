@@ -17,8 +17,8 @@ public class WebController {
     @Autowired
     private IMessageService messageService;
 
-    @RequestMapping(value = "/{id}")
-    public Object getWeb(@PathVariable("id") Integer id, Model model){
+    @RequestMapping(value = "/{id}/{openid}")
+    public Object getWeb(@PathVariable("id") Integer id, @PathVariable("openid") String openid, Model model){
         Message message = messageService.selectById(id);
         if(StrUtil.isBlank(message.getInfo())){
             message.setInfo("ID填写错误");

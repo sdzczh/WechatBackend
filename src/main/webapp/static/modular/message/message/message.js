@@ -21,6 +21,7 @@ Message.initColumn = function () {
             {title: '广告类型', field: 'type', visible: true, align: 'center', valign: 'middle'},
             {title: '推广数量', field: 'amount', visible: true, align: 'center', valign: 'middle'},
             {title: '剩余推广数量', field: 'remain', visible: true, align: 'center', valign: 'middle'},
+            {title: '需浏览次数', field: 'number', visible: true, align: 'center', valign: 'middle'},
             {title: '创建时间', field: 'createTime', visible: true, align: 'center', valign: 'middle'}
     ];
 };
