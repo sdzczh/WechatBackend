@@ -10,6 +10,7 @@
         <result column="info" property="info" />
         <result column="type" property="type" />
         <result column="amount" property="amount" />
+        <result column="money" property="money" />
         <result column="remain" property="remain" />
         <result column="number" property="number" />
         <result column="create_time" property="createTime" />
@@ -17,7 +18,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, mid, title, info, type, amount, remain, number, create_time
+        id, mid, title, info, type, amount, remain, money, number, create_time
     </sql>
 
 </mapper>

@@ -50,6 +50,7 @@ MessageInfoDlg.collectData = function() {
     .set('mid')
     .set('title')
     .set('type')
+    .set('money')
     .set('amount')
     .set('number')
     .set('remain')

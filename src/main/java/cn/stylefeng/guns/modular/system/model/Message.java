@@ -47,6 +47,10 @@ public class Message extends Model<Message> {
      */
     private BigDecimal amount;
     /**
+     * 用金总额
+     */
+    private BigDecimal money;
+    /**
      * 剩余推广数量
      */
     private BigDecimal remain;
@@ -83,6 +87,14 @@ public class Message extends Model<Message> {
 
     public String getTitle() {
         return title;
+    }
+
+    public BigDecimal getMoney() {
+        return money;
+    }
+
+    public void setMoney(BigDecimal money) {
+        this.money = money;
     }
 
     public void setTitle(String title) {
@@ -143,6 +155,7 @@ public class Message extends Model<Message> {
         ", title=" + title +
         ", info=" + info +
         ", type=" + type +
+        ", money=" + money +
         ", amount=" + amount +
         ", remain=" + remain +
         ", createTime=" + createTime +

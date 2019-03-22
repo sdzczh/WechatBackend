@@ -19,6 +19,7 @@ Message.initColumn = function () {
             {title: '标题', field: 'title', visible: true, align: 'center', valign: 'middle'},
             {title: '富文本信息', field: 'info', visible: true, align: 'center', valign: 'middle'},
             {title: '广告类型', field: 'type', visible: true, align: 'center', valign: 'middle'},
+            {title: '佣金总额', field: 'money', visible: true, align: 'center', valign: 'middle'},
             {title: '推广数量', field: 'amount', visible: true, align: 'center', valign: 'middle'},
             {title: '剩余推广数量', field: 'remain', visible: true, align: 'center', valign: 'middle'},
             {title: '需浏览次数', field: 'number', visible: true, align: 'center', valign: 'middle'},
