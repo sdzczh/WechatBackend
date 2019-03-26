@@ -1,6 +1,7 @@
 package cn.stylefeng.guns.modular.message.controller;
 
 import cn.stylefeng.roses.core.base.controller.BaseController;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -60,7 +61,9 @@ public class MessageController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     public Object list(String condition) {
-        return messageService.selectList(null);
+        EntityWrapper<Message> ew = new EntityWrapper<>();
+        ew.like("title", condition);
+        return messageService.selectList(ew);
     }
 
     /**
