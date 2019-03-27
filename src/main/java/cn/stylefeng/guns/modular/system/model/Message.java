@@ -31,6 +31,10 @@ public class Message extends Model<Message> {
      */
     private String title;
     /**
+     * 描述
+     */
+    private String desc;
+    /**
      * 富文本信息
      */
     private String info;
@@ -87,6 +91,14 @@ public class Message extends Model<Message> {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
     public BigDecimal getMoney() {
@@ -153,6 +165,7 @@ public class Message extends Model<Message> {
         ", mid=" + mid +
         ", number=" + number +
         ", title=" + title +
+        ", desc=" + desc +
         ", info=" + info +
         ", type=" + type +
         ", money=" + money +
